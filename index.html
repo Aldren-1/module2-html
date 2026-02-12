@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">Submit</button>
-<title>Personal Online CV</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta charset="UTF-8">Submit</button>
+	<title>Personal Online CV</title>
+
 </head>
 <body>
 
 <header>
-	<section>
-		<h1>Aldren O. Restauro</h1>
-		<p> IT Student | Web Systems and Technologies </p>
-		<img src="images/profile.jpg" alt="Profile photo">
-		
-		<p> Email: 
-            <a href="mailto:youremail@example.com">restauroaldrin@gmail.com</a><br>
-            GitHub: 
-            <a href="https://github.com" target="_blank">https://github.com/Aldren-1</a>
-        </p>
-	</section>
-	
+	<h1>Aldren O. Restauro</h1>
+	<p class ="t1"> IT Student | Web Systems and Technologies </p>	
+
 </header>
 
 <main>
-	<section>
+	<div class="container">
+	<section class ="card">
 		<h2>About me!</h2>
+		<img src="images/profile.jpg" alt="Profile photo">
 		<p> I am a 20-year-old IT student at USTP, 
-		I like playing games specially DOTA 2 and LOL.
+		 I like playing games specially DOTA 2 and LOL.
 		</p>
-	</section>	
-	
-	<section>
+		<p> Email: 
+		<a href="mailto:youremail@example.com">restauroaldrin@gmail.com</a><br>
+				GitHub: 
+		<a href="https://github.com" target="_blank">https://github.com/Aldren-1</a>
+		</p>
+		</section>
+		<section class = "card">
 		<h2>Education</h2>
 		<table border ="1" cellpadding = "5" cellspacing = "0">
 			<tr>
@@ -60,7 +59,7 @@
 		</table>
 	</section>
 
-	<section>
+	<section class = "card">
         <h2>Skills</h2>
         <ul>
             <li>Web Development
@@ -75,7 +74,7 @@
             </ul>
 	</section> 
 	
-	<section>
+	<section class = "card">
 		<h2>Contact Me</h2>
 		<form>
 			<input type="text" placeholder="Name"><br><br>
@@ -84,9 +83,8 @@
 			<button type="submit">Send</button>
 		</form>
 	</section>
-	
-	
-</main>
+	</main>
+	</div>
 
 <footer>
 	<p>&copy; 2026 Aldren O. Restauro. All rights reserved. </p>
