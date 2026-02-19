@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link rel="stylesheet" href="css/styles.css">
-	<meta charset="UTF-8">Submit</button>
+	<meta charset="UTF-8"></button>
 	<title>Personal Online CV</title>
 
 </head>
+
 <body>
 
-<header>
-	<h1>Aldren O. Restauro</h1>
-	<p class ="t1"> IT Student | Web Systems and Technologies </p>	
 
-</header>
+	<header>
+		<button id="themeToggle" class ="t3">Toggle Dark Mode</button>
+		<h1>Aldren O. Restauro</h1>
+		<p class="t1"> IT Student | Web Systems and Technologies </p>
 
-<main>
-	<div class="container">
-	<section class ="card card-blue">
-		<h2>About me!</h2>
-		<img src="images/profile.jpg" alt="Profile photo">
-		<p> I am a 20-year-old IT student at USTP, 
-		 I like playing games specially DOTA 2 and LOL.
-		</p>
-		<p> Email: 
-		<a href="mailto:youremail@example.com">restauroaldrin@gmail.com</a><br>
-				GitHub: 
-		<a href="https://github.com" target="_blank">https://github.com/Aldren-1</a>
-		</p>
-		</section>
-		<section class = "card">
-		<h2>Education</h2>
-		<table border ="1" cellpadding = "5" cellspacing = "0">
-			<tr>
-				<th>Program</th>
-				<th>Institution</th>
-				<th>Year Graduated</th>
-			</tr>
-			<tr>
-				<th>Kinder</th>
-				<th>North city central school</th>
-				<th>2010</th>
-			</tr>
-			<tr>
-				<th>Elementary</th>
-				<th>North city central school</th>
-				<th>2017</th>
-			</tr>
-			<tr>
-				<th>High school</th>
-				<th>Misamis Oriental General Comprehensive Highschool</th>
-				<th>2022</th>
-			</tr>
-			<tr>
-				<th>College</th>
-				<th>USTP-CDO</th>
-				<th>2026</th>
-			</tr>
-		</table>
-	</section>
+	</header>
 
-	<section class = "card">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Development
-            <ul>
-				<li>Frontend
-                <ul>
-					<li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <li>Backend</li>
-            </ul>
-	</section> 
+	<main>
+		<div class="container">
+			<section class="card card-blue">
+				<h2>About me!</h2>
+				<img src="images/profile.jpg" alt="Profile photo">
+				<p> I am a 20-year-old IT student at USTP,
+					I like playing games specially DOTA 2 and LOL.
+				</p>
+				<p> Email:
+					<a href="mailto:youremail@example.com">restauroaldrin@gmail.com</a><br>
+					GitHub:
+					<a href="https://github.com" target="_blank">https://github.com/Aldren-1</a>
+				</p>
+			</section>
+			<section class="card">
+				<h2>Education</h2>
+				<table border="1" cellpadding="5" cellspacing="0">
+					<tr>
+						<th>Program</th>
+						<th>Institution</th>
+						<th>Year Graduated</th>
+					</tr>
+					<tr>
+						<th>Kinder</th>
+						<th>North city central school</th>
+						<th>2010</th>
+					</tr>
+					<tr>
+						<th>Elementary</th>
+						<th>North city central school</th>
+						<th>2017</th>
+					</tr>
+					<tr>
+						<th>High school</th>
+						<th>Misamis Oriental General Comprehensive Highschool</th>
+						<th>2022</th>
+					</tr>
+					<tr>
+						<th>College</th>
+						<th>USTP-CDO</th>
+						<th>2026</th>
+					</tr>
+				</table>
+			</section>
+			<button id="toggleSkills">Show/Hide Skills</button>
+			<section class="card" id="skillsSection">
+				<h2>Skills</h2>
+				<ul>
+					<li>Web Development
+						<ul>
+							<li>Frontend
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+								</ul>
+							<li>Backend</li>
+						</ul>
+			</section>
+
+			<section class="card" >
+				<h2>Contact Me</h2>
+				<form>
+					<input type="text" id="name" placeholder="Name">
+					<input type="email" id="email" placeholder="Email">
+					<textarea placeholder="Message"></textarea><br><br>
+					<button type="submit" id="submitBtn">Send</button>
+				</form>
+			</section>
+		</div>
+	</main>
+
+
+	<footer>
+		<p>&copy; 2026 Aldren O. Restauro. All rights reserved. </p>
+	</footer>
+
+
+	<script src="js/script.js"> </script>
+</body >
 	
-	<section class = "card">
-		<h2>Contact Me</h2>
-		<form>
-			<input type="text" placeholder="Name"><br><br>
-			<input type="email" placeholder="Email"><br><br>
-			<textarea placeholder="Message"></textarea><br><br>
-			<button type="submit">Send</button>
-		</form>
-	</section>
-	</div>
-</main>
+</html >
 
-
-<footer>
-	<p>&copy; 2026 Aldren O. Restauro. All rights reserved. </p>
-</footer>
-
-</body>
-</html>
-
-
-
+			
