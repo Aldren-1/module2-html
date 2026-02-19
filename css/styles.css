@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #c46161;
     padding: 20px;
 }
 
@@ -32,6 +32,16 @@ h1 {
 }
 
 .t1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.t2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.t3 {
     text-align: center;
     margin-bottom: 10px;
 }
@@ -91,7 +101,7 @@ textarea {
 
 button {
     padding: 10px;
-    background-color: #0077cc;
+    background-color: #f355ac;
     color: white;
     border: none;
     cursor: pointer;
@@ -102,8 +112,8 @@ button:hover {
 }
 
 .dark-mode {
-    background-color: #222;
-    color: white;
+    background-color: #6664f3;
+    color: rgb(14, 13, 13);
 }
 
 .hidden {
