@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className={darkMode ? "dark-mode" : ""}>
-      {/* Toggle button fixed on top-left */}
       <button className="toggle-btn" onClick={handleToggle}>
         {darkMode ? "Toogle to Light Mode" : "Toogle to Dark Mode"}
       </button>
