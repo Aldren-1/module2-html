@@ -3,7 +3,7 @@ import { useState } from "react";
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState(""); // ✅ new state
+  const [message, setMessage] = useState(""); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ function Contact() {
     alert("Form submitted successfully!");
     alert("Thank you! Your message has been received.");
 
-    // clear all inputs
+  
     setName("");
     setEmail("");
     setMessage("");

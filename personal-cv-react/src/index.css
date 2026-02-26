@@ -124,7 +124,7 @@ button:hover {
     color: white;
 }
 
-/* TOGGLE BUTTON - LEFT SIDE FIXED */
+
 .toggle-btn {
     position: fixed;
     top: 20px;
@@ -132,7 +132,7 @@ button:hover {
     z-index: 1000;
 }
 
-/* HIDDEN */
+
 .hidden {
     display: none;
 }

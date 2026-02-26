@@ -3,7 +3,6 @@ import { useState } from "react";
 function Skills() {
 
   const [visible, setVisible] = useState(true);
-
   return (
 
     <section className="card">

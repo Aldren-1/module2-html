@@ -22,7 +22,6 @@ function About() {
         </a>
 
         <br />
-
         GitHub:
 
         <a href="https://github.com/Aldren-1"

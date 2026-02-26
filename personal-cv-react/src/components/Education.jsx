@@ -30,7 +30,6 @@ function Education() {
 					</tr>
 				</table>
     </section>
-
  );
 }
 
