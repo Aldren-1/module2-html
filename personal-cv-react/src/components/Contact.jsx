@@ -1,36 +1,54 @@
+import { useState } from "react";
+
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState(""); // ✅ new state
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    alert("Form submitted successfully!");
+    alert("Thank you! Your message has been received.");
+
+    // clear all inputs
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <section className="card">
+      <h2>Contact</h2>
 
-      <h2>Contact Me</h2>
-
-      <form>
-
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
-          id="name"
           placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
 
         <input
           type="email"
-          id="email"
           placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
 
         <textarea
           placeholder="Message"
-        ></textarea>
+          value={message}                  
+          onChange={(e) => setMessage(e.target.value)} 
+        />
 
-        <br />
-        <br />
-
-        <button type="submit" id="submitBtn">
-          Send
-        </button>
-
+        <button type="submit">Submit</button>
       </form>
-
     </section>
   );
 }

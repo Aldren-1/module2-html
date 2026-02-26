@@ -15,11 +15,13 @@ function App() {
 
   return (
     <div className={darkMode ? "dark-mode" : ""}>
+      {/* Toggle button fixed on top-left */}
+      <button className="toggle-btn" onClick={handleToggle}>
+        {darkMode ? "Toogle to Light Mode" : "Toogle to Dark Mode"}
+      </button>
+
       <header>
         <h1>My Personal Online CV</h1>
-        <button onClick={handleToggle}>
-          {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-        </button>
       </header>
 
       <Header />
