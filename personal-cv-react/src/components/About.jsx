@@ -1,11 +1,9 @@
 import profile from "../assets/profile.jpg";
-
+import Card from "./Card";
 function About() {
   return (
 
-    <section className="card card-blue">
-
-      <h2>About me!</h2>
+    <Card title="About me!">
 
       <img src={profile} alt="Profile photo" />
 
@@ -15,26 +13,20 @@ function About() {
       </p>
 
       <p>
-
         Email:
         <a href="mailto:restauroaldrin@gmail.com">
-        restauroaldrin@gmail.com
+          restauroaldrin@gmail.com
         </a>
 
         <br />
+
         GitHub:
-
-        <a href="https://github.com/Aldren-1"
-        target="_blank">
-
-        https://github.com/Aldren-1
-
+        <a href="https://github.com/Aldren-1" target="_blank">
+          https://github.com/Aldren-1
         </a>
-
       </p>
 
-    </section>
-
+    </Card>
   );
 }
 
