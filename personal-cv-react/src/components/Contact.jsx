@@ -13,8 +13,8 @@ function Contact() {
       return;
     }
 
-    alert("Form submitted successfully!");
-    alert("Thank you! Your message has been received.");
+    alert(`Thank you ${name}! Your message has been received.`);
+    
 
   
     setName("");
