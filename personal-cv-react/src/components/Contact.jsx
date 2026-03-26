@@ -13,10 +13,31 @@ function Contact() {
       return;
     }
 
-    alert(`Thank you ${name}! Your message has been received.`);
-    
+    // ✅ SEND DATA TO PHP
+    fetch("http://localhost/cv-api/process.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message
+      })
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.message) {
+        alert(data.message);
+      } else {
+        alert("Unexpected error occurred.");
+      }
+    })
+    .catch(() => {
+      alert("Failed to connect to server.");
+    });
 
-  
+    // clear form
     setName("");
     setEmail("");
     setMessage("");
