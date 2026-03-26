@@ -37,7 +37,7 @@ function Contact() {
       alert("Failed to connect to server.");
     });
 
-    
+    //
     setName("");
     setEmail("");
     setMessage("");
