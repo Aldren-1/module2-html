@@ -13,13 +13,13 @@ function Contact() {
       return;
     }
 
-    // ✅ SEND DATA TO PHP
+    
     fetch("http://localhost/cv-api/process.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
+      body: JSON.stringify({ 
         name: name,
         email: email,
         message: message
@@ -37,7 +37,7 @@ function Contact() {
       alert("Failed to connect to server.");
     });
 
-    // clear form
+    
     setName("");
     setEmail("");
     setMessage("");
